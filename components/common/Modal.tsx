@@ -7,11 +7,10 @@ import React, {
 import * as DialogPrimitive from '@radix-ui/react-dialog'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClose, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
-import { Anchor, Button, Flex, Text, Box } from '../primitives'
+import { Button, Flex, Text, Box } from '../primitives'
 import { styled } from '../../stitches.config'
 import { Dialog } from '../primitives/Dialog'
 import LoadingSpinner from './LoadingSpinner'
-import ReservoirLogoWhiteText from 'public/ReservoirLogoWhiteText'
 
 const Title = styled(DialogPrimitive.Title, {
   margin: 0,
@@ -30,12 +29,6 @@ type Props = {
   | 'trigger'
   | 'onFocusCapture'
 >
-
-const Logo = styled(ReservoirLogoWhiteText, {
-  '& .letter': {
-    fill: '$gray12',
-  },
-})
 
 export const Modal = forwardRef<ElementRef<typeof Dialog>, Props>(
   (
@@ -101,26 +94,6 @@ export const Modal = forwardRef<ElementRef<typeof Dialog>, Props>(
         >
           {children}
         </Box>
-        <Flex
-          css={{
-            mx: 'auto',
-            alignItems: 'center',
-            justifyContent: 'center',
-            backgroundColor: '$gray3',
-            py: 10.5,
-            borderBottomRightRadius: '$borderRadius',
-            borderBottomLeftRadius: '$borderRadius',
-          }}
-        >
-          <Anchor href="https://reservoir.tools/" target="_blank">
-            <Text
-              style="body3"
-              css={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}
-            >
-              Powered by <Logo />
-            </Text>
-          </Anchor>
-        </Flex>
       </Dialog>
     )
   }
