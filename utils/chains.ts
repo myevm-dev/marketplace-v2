@@ -93,6 +93,7 @@ export const DefaultChain: ReservoirChain = {
 
 export default [
   DefaultChain,
+  /*
   {
     ...polygon,
     lightIconUrl: '/icons/polygon-icon-dark.svg',
@@ -536,7 +537,7 @@ export default [
     coingeckoId: 'celestia',
     oracleBidsEnabled: true,
     checkPollingInterval: reservoirChains.forma.checkPollingInterval,
-  },
+  },\*/
   {
     ...customChains.apechain,
     name: 'Apechain',
@@ -550,6 +551,7 @@ export default [
     oracleBidsEnabled: true,
     checkPollingInterval: reservoirChains.apechain.checkPollingInterval,
   },
+  /*
   {
     ...customChains.shape,
     name: 'Shape',
@@ -602,4 +604,5 @@ export default [
     oracleBidsEnabled: true,
     checkPollingInterval: reservoirChains.zero.checkPollingInterval,
   },
+  */
 ] as ReservoirChain[]

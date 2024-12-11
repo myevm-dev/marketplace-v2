@@ -165,9 +165,6 @@ const Home: NextPage<Props> = ({ ssr }) => {
               mb: '$4',
             }}
           >
-            <Text style="h4" as="h4">
-              Featured
-            </Text>
           </Flex>
           <Box
             css={{
