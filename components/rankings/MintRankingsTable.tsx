@@ -53,7 +53,7 @@ export const MintRankingsTable: FC<Props> = ({ mints, loading }) => {
           <Text css={{ color: '$gray11' }}>
             <FontAwesomeIcon icon={faMagnifyingGlass} size="2xl" />
           </Text>
-          <Text css={{ color: '$gray11' }}>No mints found</Text>
+          <Text css={{ color: '$gray11' }}>Coming Soon</Text>
         </Flex>
       ) : (
         <Flex direction="column" css={{ width: '100%', pb: '$2' }}>
