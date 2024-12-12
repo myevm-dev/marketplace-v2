@@ -33,11 +33,11 @@ const SectionLink: FC<SectionLinkProps> = ({ name, href }) => (
 const developerSectionLinks = [
   {
     name: 'Docs',
-    href: 'https://docs.reservoir.tools/docs',
+    href: 'https://myevm.xyz',
   },
   {
     name: 'Github',
-    href: 'https://github.com/reservoirprotocol',
+    href: 'https://github.com/myevm-dev',
   },
 ]
 
