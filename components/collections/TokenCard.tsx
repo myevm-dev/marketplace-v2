@@ -254,26 +254,21 @@ export default ({
                   }}
                 >
                   {token?.market?.floorAsk?.price && (
-                    <FormatCryptoCurrency
-                      logoHeight={18}
-                      amount={token?.market?.floorAsk?.price?.amount?.raw}
-                      address={
-                        token?.market?.floorAsk?.price?.currency?.contract
-                      }
-                      decimals={
-                        token?.market?.floorAsk?.price?.currency?.decimals
-                      }
-                      borderRadius="100%"
-                      textStyle="h6"
-                      css={{
-                        textOverflow: 'ellipsis',
-                        minWidth: 0,
-                        with: '100%',
-                        overflow: 'hidden',
-                        fontSize: 18,
-                      }}
-                      maximumFractionDigits={4}
-                    />
+                    <img
+                    style={{
+                      width: 20,
+                      height: 20,
+                      borderRadius: '50%',
+                    }}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      // Optional: Keep existing functionality or remove
+                    }}
+                    src="ethlogo.png"
+                    alt="ETH Logo"
+                  />
+                  
                   )}
                 </Box>
 

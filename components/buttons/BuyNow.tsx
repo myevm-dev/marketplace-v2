@@ -55,10 +55,8 @@ const BuyNow: FC<Props> = ({
       onConnectWallet={() => {
         openConnectModal?.()
       }}
-      //CONFIGURABLE: set any fees on top of orders, note that these will only
-      // apply to native orders (using the reservoir order book) and not to external orders (opensea, blur etc)
-      // Refer to our docs for more info: https://docs.reservoir.tools/reference/sweepmodal-1
-      // feesOnTopBps={["0xabc:50"]}
+      // Set 2% fee for native orders
+      feesOnTopBps={["0xC0DE00EE457D8117474286C1eD313F194aC20263:200"]}
       feesOnTopUsd={feesOnTop}
       chainId={marketplaceChain.id}
       onClose={(data, stepData, currentStep) => {
